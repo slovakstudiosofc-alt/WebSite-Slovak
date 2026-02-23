@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(78, 63, 78), rgb(25, 2, 56), rgb(25, 2, 56));
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 400px;
+    background: linear-gradient(rgb(25, 2, 56), rgb(25, 2, 56), rgb(78, 63, 78));
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.mine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left h1 {
+    font-size: 32px;
+}
+
+.left p {
+    opacity: 0.8;
+}
+
+.right nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.right nav a {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.right nav a:hover {
+    opacity: 0.7;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.effect {
+    opacity: 0.7;
+    font-weight: normal;
+}
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .mine {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right nav {
+        justify-content: center;
+    }
+
+    .extra {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .left h1 {
+        font-size: 26px;
+    }
+}
